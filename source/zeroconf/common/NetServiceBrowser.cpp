@@ -65,9 +65,9 @@ static void DNSSD_API browse_reply(DNSServiceRef client,
 }
 
 NetServiceBrowser::NetServiceBrowser()
-: mpListener(NULL)
+: mDNSServiceRef(NULL)
+, mpListener(NULL)
 , mpNetServiceThread(NULL)
-, mDNSServiceRef(NULL)
 {
 }
 
